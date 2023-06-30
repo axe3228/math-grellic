@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div>
-      Math Grellic Home page!
+      Math Grellic testing after deployment on vercel!
     </div>
   )
 }
