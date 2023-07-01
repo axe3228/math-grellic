@@ -1,4 +1,13 @@
 import './globals.css'
+import { Manrope } from 'next/font/google';
+
+const manrope = Manrope({
+  weight: ['300', '400', '500', '600', '700', '800'],
+  display: 'swap',
+  style: ['normal'],
+  subsets: ['latin'],
+  variable: '--font-manrope',
+});
 
 export default function RootLayout({
   children,
@@ -12,7 +21,11 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body>{children}</body>
+      <body>
+        <main className={`${manrope.variable} font-sans`}>
+          {children}
+        </main>
+      </body>
     </html>
   )
 }
