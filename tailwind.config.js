@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin');
 const colors = require('tailwindcss/colors');
 
 module.exports = {
@@ -11,7 +12,11 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['var(--font-manrope)']
+      },
+    },
     colors: {
       ...colors,
       'uranian-blue': {
@@ -56,5 +61,73 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/line-clamp'),
+    require('@tailwindcss/aspect-ratio'),
+    plugin(({ addBase, addUtilities }) => {
+      addBase({
+        h1: { fontWeight: '700', fontSize: '72px', lineHeight: 1, letterSpacing: 0 },
+        h2: { fontWeight: '700', fontSize: '60px', lineHeight: '64px', letterSpacing: 0 },
+        h3: { fontWeight: '700', fontSize: '40px', lineHeight: '54px', letterSpacing: 0 },
+        h4: { fontWeight: '700', fontSize: '30px', lineHeight: '40px', letterSpacing: 0 },
+        h5: { fontWeight: '700', fontSize: '24px', lineHeight: '32px', letterSpacing: 0 },
+        h6: { fontWeight: '700', fontSize: '18px', lineHeight: '30px', letterSpacing: 0 },
+      });
+      addUtilities({
+        '.h1-base': { fontWeight: '400', fontSize: '72px', lineHeight: '98px', letterSpacing: 0 },
+        '.h1-md': { fontWeight: '500', fontSize: '72px', lineHeight: '98px', letterSpacing: 0 },
+        '.h1-bold': { fontWeight: '700', fontSize: '72px', lineHeight: '98px', letterSpacing: 0 },
+
+        '.h2-base': { fontWeight: '400', fontSize: '48px', lineHeight: '64px', letterSpacing: 0 },
+        '.h2-md': { fontWeight: '500', fontSize: '48px', lineHeight: '64px', letterSpacing: 0 },
+        '.h2-bold': { fontWeight: '700', fontSize: '48px', lineHeight: '64px', letterSpacing: 0 },
+
+        '.h3-base': { fontWeight: '400', fontSize: '40px', lineHeight: '54px', letterSpacing: 0 },
+        '.h3-md': { fontWeight: '500', fontSize: '40px', lineHeight: '54px', letterSpacing: 0 },
+        '.h3-bold': { fontWeight: '700', fontSize: '40px', lineHeight: '54px', letterSpacing: 0 },
+
+        '.h4-base': { fontWeight: '400', fontSize: '28px', lineHeight: '40px', letterSpacing: 0 },
+        '.h4-md': { fontWeight: '500', fontSize: '28px', lineHeight: '40px', letterSpacing: 0 },
+        '.h4-bold': { fontWeight: '700', fontSize: '28px', lineHeight: '40px', letterSpacing: 0 },
+
+        '.h5-base': { fontWeight: '400', fontSize: '24px', lineHeight: '32px', letterSpacing: 0 },
+        '.h5-md': { fontWeight: '500', fontSize: '24px', lineHeight: '32px', letterSpacing: 0 },
+        '.h5-bold': { fontWeight: '700', fontSize: '24px', lineHeight: '32px', letterSpacing: 0 },
+
+        '.h6-base': { fontWeight: '400', fontSize: '20px', lineHeight: '30px', letterSpacing: 0 },
+        '.h6-md': { fontWeight: '500', fontSize: '20px', lineHeight: '30px', letterSpacing: 0 },
+        '.h6-bold': { fontWeight: '700', fontSize: '20px', lineHeight: '30px', letterSpacing: 0 },
+
+        '.subheading-xl-regular': { fontWeight: '400', fontSize: '20px', lineHeight: '28px', letterSpacing: 0 },
+        '.subheading-xl-md': { fontWeight: '500', fontSize: '20px', lineHeight: '28px', letterSpacing: 0 },
+
+        '.subheading-lg-regular': { fontWeight: '400', fontSize: '18px', lineHeight: '28px', letterSpacing: 0 },
+        '.subheading-lg-md': { fontWeight: '500', fontSize: '18px', lineHeight: '28px', letterSpacing: 0 },
+
+        '.subheading-sm-regular': { fontWeight: '400', fontSize: '16px', lineHeight: '24px', letterSpacing: 0 },
+        '.subheading-sm-md': { fontWeight: '500', fontSize: '16px', lineHeight: '24px', letterSpacing: 0 },
+
+        '.lead-regular': { fontWeight: '400', fontSize: '18px', lineHeight: '32px', letterSpacing: 0 },
+        '.lead-md': { fontWeight: '500', fontSize: '14px', lineHeight: '24px', letterSpacing: 0 },
+
+        '.body-md': { fontWeight: '400', fontSize: '18px', lineHeight: '32px', letterSpacing: 0 },
+        '.body-sm': { fontWeight: '400', fontSize: '14px', lineHeight: '22px', letterSpacing: 0 },
+
+        '.label-lg-md': { fontWeight: '500', fontSize: '20px', lineHeight: '30px', letterSpacing: 0 },
+        '.label-lg-bold': { fontWeight: '700', fontSize: '20px', lineHeight: '30px', letterSpacing: 0 },
+
+        '.label-md-md': { fontWeight: '500', fontSize: '14px', lineHeight: '20px', letterSpacing: 0 },
+        '.label-md-bold': { fontWeight: '700', fontSize: '14px', lineHeight: '20px', letterSpacing: 0 },
+
+        '.label-sm-md': { fontWeight: '500', fontSize: '12px', lineHeight: '16px', letterSpacing: 0 },
+        '.label-sm-bold': { fontWeight: '700', fontSize: '12px', lineHeight: '16px', letterSpacing: 0 },
+
+        '.btn-text-lg': { fontWeight: '500', fontSize: '18px', lineHeight: '28px', letterSpacing: 0 },
+        '.btn-text-md': { fontWeight: '500', fontSize: '16px', lineHeight: '24px', letterSpacing: 0 },
+        '.btn-text-sm': { fontWeight: '500', fontSize: '14px', lineHeight: '20px', letterSpacing: 0 },
+      });
+    })
+  ],
 };
