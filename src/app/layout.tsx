@@ -1,5 +1,7 @@
-import './globals.css'
 import { Manrope } from 'next/font/google';
+import { Footer } from './component/footer';
+import { NavBar } from './component/navbar';
+import './globals.css';
 
 const manrope = Manrope({
   weight: ['300', '400', '500', '600', '700', '800'],
@@ -22,9 +24,11 @@ export default function RootLayout({
       */}
       <head />
       <body>
-        <main className={`${manrope.variable} font-sans`}>
-          {children}
-        </main>
+        <NavBar />
+          <main className={`${manrope.variable} font-sans`}>
+            {children}
+          </main>
+        <Footer />
       </body>
     </html>
   )
