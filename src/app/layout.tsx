@@ -1,5 +1,3 @@
-import { Footer } from '@/component/footer';
-import { NavBar } from '@/component/navbar';
 import { Manrope } from 'next/font/google';
 import './globals.css';
 
@@ -24,11 +22,9 @@ export default function RootLayout({
       */}
       <head />
       <body>
-        <NavBar />
-          <main className={`${manrope.variable} font-sans`}>
-            {children}
-          </main>
-        <Footer />
+        <main className={`${manrope.variable} font-sans`}>
+          {children}
+        </main>
       </body>
     </html>
   )
