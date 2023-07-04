@@ -13,6 +13,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'xs' : '428px',
+        //...defaultTheme.screens,
+        'ab-xl': '1440px'
+      },
       fontFamily: {
         sans: ['var(--font-manrope)']
       },
@@ -35,6 +40,7 @@ module.exports = {
         25: '#FFE9E9',
         50: '#F9CDCD',
         100: '#F79090',
+        150: '#F76C6C',
         200: '#E45B5B',
       },
       state: {
@@ -55,6 +61,7 @@ module.exports = {
       },
       dark: {
         DEFAULT: '#0F1F38',
+        'secondary' : '#1D284F',
       },
       gray: {
         DEFAULT: '#F0F2F3',
@@ -94,17 +101,19 @@ module.exports = {
 
         '.h5-base': { fontWeight: '400', fontSize: '24px', lineHeight: '32px', letterSpacing: 0 },
         '.h5-md': { fontWeight: '500', fontSize: '24px', lineHeight: '32px', letterSpacing: 0 },
+        '.h5-lg': { fontWeight: '600', fontSize: '24px', lineHeight: '32px', letterSpacing: 0 },
         '.h5-bold': { fontWeight: '700', fontSize: '24px', lineHeight: '32px', letterSpacing: 0 },
 
         '.h6-base': { fontWeight: '400', fontSize: '20px', lineHeight: '30px', letterSpacing: 0 },
         '.h6-md': { fontWeight: '500', fontSize: '20px', lineHeight: '30px', letterSpacing: 0 },
         '.h6-bold': { fontWeight: '700', fontSize: '20px', lineHeight: '30px', letterSpacing: 0 },
 
-        '.subheading-xl-regular': { fontWeight: '400', fontSize: '20px', lineHeight: '28px', letterSpacing: 0 },
+        '.subheading-xl-regular': { fontWeight: '400', fontSize: '20px', lineHeight: '28px', letterSpacing: 1.6 },
         '.subheading-xl-md': { fontWeight: '500', fontSize: '20px', lineHeight: '28px', letterSpacing: 0 },
 
         '.subheading-lg-regular': { fontWeight: '400', fontSize: '18px', lineHeight: '28px', letterSpacing: 0 },
         '.subheading-lg-md': { fontWeight: '500', fontSize: '18px', lineHeight: '28px', letterSpacing: 0 },
+        '.subheading-lg-bold': { fontWeight: '500', fontSize: '18px', lineHeight: '28px', letterSpacing: 0 },
 
         '.subheading-sm-regular': { fontWeight: '400', fontSize: '16px', lineHeight: '24px', letterSpacing: 0 },
         '.subheading-sm-md': { fontWeight: '500', fontSize: '16px', lineHeight: '24px', letterSpacing: 0 },
