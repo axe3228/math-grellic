@@ -30,7 +30,7 @@ const SideNavbar = (props: any) => {
                     <Image 
                         width={24}
                         height={24}
-                        src="/images/brand-logo.png"
+                        src="/images/mg-brand-logo.png"
                         alt=""
                         className='w-[22px]'/>
                     {hover && <p className={`label-md-bold text-[#374785] ml-2 whitespace-nowrap`}>MATH GRELLIC</p>}

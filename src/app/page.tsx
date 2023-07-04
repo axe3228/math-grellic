@@ -33,7 +33,7 @@ export default function Home() {
                   <Image
                     width={320}
                     height={320}
-                    src={"/images/brand-logo.png"}
+                    src={"/images/mg-brand-logo.png"}
                     alt=""
                   />
                 </div>
