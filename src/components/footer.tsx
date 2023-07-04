@@ -7,7 +7,7 @@ export const Footer = () => (
         <Image 
           width={32}
           height={32}
-          src={"icons/brand-logo.svg"}
+          src={"icons/mg-brand-logo.svg"}
           alt="brand logo"
         />
         <h6 className="subheading-xl-regular !font-rubik">MATH GRELLIC</h6>
