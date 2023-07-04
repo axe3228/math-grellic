@@ -1,6 +1,6 @@
-import { AboutUsCards } from "@/component/cards/about-us-cards"
-import { Footer } from "@/component/footer"
-import { NavBar } from "@/component/navbar"
+import { AboutUsCards } from "@/components/cards/about-us-cards"
+import { Footer } from "@/components/footer"
+import { NavBar } from "@/components/navbar"
 import Image from "next/image"
 
 export default function Home() {
