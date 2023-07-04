@@ -1,6 +1,6 @@
+import { Footer } from '@/component/footer';
+import { NavBar } from '@/component/navbar';
 import { Manrope } from 'next/font/google';
-import { Footer } from './component/footer';
-import { NavBar } from './component/navbar';
 import './globals.css';
 
 const manrope = Manrope({

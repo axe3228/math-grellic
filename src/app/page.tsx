@@ -1,5 +1,5 @@
+import { AboutUsCards } from "@/component/cards/about-us-cards"
 import Image from "next/image"
-import { AboutUsCards } from "./component/cards/about-us-cards"
 
 export default function Home() {
   return (
