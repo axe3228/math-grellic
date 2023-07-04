@@ -21,6 +21,9 @@ module.exports = {
       fontFamily: {
         sans: ['var(--font-manrope)']
       },
+      boxShadow: {
+        'side-nav': '0px 4px 20px 0px rgba(0, 0, 0, 0.25)',
+      },
     },
     colors: {
       ...colors,
