@@ -7,7 +7,7 @@ export const NavBar = () => (
         <Image 
           width={32}
           height={32}
-          src={"/icons/mg-brand-logo.png"}
+          src={"/icons/brand-logo.png"}
           alt="brand"
         />
       </div>
