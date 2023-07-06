@@ -1,4 +1,4 @@
-import { Manrope } from 'next/font/google';
+import { Manrope, Squada_One } from 'next/font/google';
 import './globals.css';
 
 const manrope = Manrope({
@@ -7,6 +7,14 @@ const manrope = Manrope({
   style: ['normal'],
   subsets: ['latin'],
   variable: '--font-manrope',
+});
+
+const squada = Squada_One({
+  weight: ['400'],
+  display: 'swap',
+  style: ['normal'],
+  subsets: ['latin'],
+  variable: '--font-squada',
 });
 
 export default function RootLayout({
@@ -22,7 +30,7 @@ export default function RootLayout({
       */}
       <head />
       <body>
-        <main className={`${manrope.variable} font-sans`}>
+        <main className={`${manrope.variable} ${squada.variable} font-sans`}>
           {children}
         </main>
       </body>

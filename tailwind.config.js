@@ -19,7 +19,8 @@ module.exports = {
         'ab-xl': '1440px'
       },
       fontFamily: {
-        sans: ['var(--font-manrope)']
+        sans: ['var(--font-manrope)'],
+        squada: ['var(--font-squada)']
       },
       boxShadow: {
         'side-nav': '0px 4px 20px 0px rgba(0, 0, 0, 0.25)',
@@ -35,8 +36,9 @@ module.exports = {
       },
       'space-blue': {
         25: '#CDD1E0',
-        50: '#9BA3C1',
-        100: '#4C5B92',
+        50: '#9BA3C1',        
+        75: '#4C5B92',
+        100: '#374785',
         200: '#1D284F',
       },
       'light-coral': {
@@ -64,11 +66,11 @@ module.exports = {
       },
       dark: {
         DEFAULT: '#0F1F38',
-        'secondary' : '#1D284F',
+        'secondary': '#1D284F',
       },
       gray: {
         DEFAULT: '#F0F2F3',
-      }
+      }     
     },
   },
   plugins: [
@@ -93,6 +95,7 @@ module.exports = {
         '.h2-base': { fontWeight: '400', fontSize: '48px', lineHeight: '64px', letterSpacing: 0 },
         '.h2-md': { fontWeight: '500', fontSize: '48px', lineHeight: '64px', letterSpacing: 0 },
         '.h2-bold': { fontWeight: '700', fontSize: '48px', lineHeight: '64px', letterSpacing: 0 },
+        '.h2-lg-bold': { fontWeight: '800', fontSize: '48px', lineHeight: '64px', letterSpacing: 0 },
 
         '.h3-base': { fontWeight: '400', fontSize: '40px', lineHeight: '54px', letterSpacing: 0 },
         '.h3-md': { fontWeight: '500', fontSize: '40px', lineHeight: '54px', letterSpacing: 0 },
@@ -137,7 +140,9 @@ module.exports = {
         '.label-sm-bold': { fontWeight: '700', fontSize: '12px', lineHeight: '16px', letterSpacing: 0 },
 
         '.btn-text-lg': { fontWeight: '500', fontSize: '18px', lineHeight: '28px', letterSpacing: 0 },
+        '.btn-text-md-bold': { fontWeight: '700', fontSize: '16px', lineHeight: '24px', letterSpacing: 0 },
         '.btn-text-md': { fontWeight: '500', fontSize: '16px', lineHeight: '24px', letterSpacing: 0 },
+        '.btn-text-sm-bold': { fontWeight: '800', fontSize: '14px', lineHeight: '18px', letterSpacing: '2px' },
         '.btn-text-sm': { fontWeight: '500', fontSize: '14px', lineHeight: '20px', letterSpacing: 0 },
       });
     })

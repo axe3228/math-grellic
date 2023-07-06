@@ -1,3 +1,4 @@
+import { Button } from "@/components/button"
 import { AboutUsCards } from "@/components/cards/about-us-cards"
 import { Footer } from "@/components/footer"
 import { NavBar } from "@/components/navbar"
@@ -7,23 +8,23 @@ export default function Home() {
   return (
     <div>
       <NavBar />
-      <div className="relative">
+        <div className="relative z-10">            
             <section className="max-w-screen-ab-xl mx-auto px-[150px] py-[120px] 
-                                text-space-blue-200 z-0">
-              <Image 
+                                text-space-blue-200 static"> 
+                <Image 
                 width={922}
                 height={820}
                 src="/images/bg-hero.png"
                 alt="school tools"
-                className="absolute top-[-80px] right-0"
-              />
-              <div className="flex flex-col space-y-8 z-10">
+                className="absolute top-[-80px] right-0 z-[-10]"
+              />            
+              <div className="flex flex-col space-y-8">
                 <div>
-                  <h1>MATH GRELLIC</h1>
+                  <h1 className="font-squada text-space-blue-100">MATH GRELLIC</h1>
                   <p>Whenever the fun starts, learning happens</p>
                 </div>
                 <div>
-                  <button className="bg-light-coral-150 rounded-lg p-2 text-white">GET STARTED NOW</button>
+                  <Button>GET STARTED NOW</Button>
                 </div>
               </div>     
             </section>
@@ -33,19 +34,19 @@ export default function Home() {
                   <Image
                     width={320}
                     height={320}
-                    src={"/images/mg-brand-logo.png"}
+                    src={"/images/brand-logo.png"}
                     alt=""
                   />
                 </div>
                 <div className="max-w-[740px] ml-20 space-y-6">
-                  <h2>About <span className="text-light-coral-150"> Math Grellic</span></h2>
-                  <p>
+                  <h2 className="h2-lg-bold">About <span className="text-light-coral-150"> Math Grellic</span></h2>
+                  <p className="text-neutral-med">
                     <span className="text-light-coral-150">Math Grellic</span> is a game-based website application designed and developed to help 
                     address the least dealt learning competencies of the K to 12 Basic Education Curriculum 
                     for the Alternative Learning System (ALS-K to 12) specifically in the Learning Strand 3 
                     (Mathematical and Problem Solving Skills).
                   </p>
-                  <p>
+                  <p className="text-neutral-med">
                     Moreover, this website application is designed not only to help 
                     the Alternative Learning System (ALS) learners master a mathematical skill but also 
                     the Alternative Learning System (ALS) teachers to easily track the progress of their learners 
@@ -56,7 +57,7 @@ export default function Home() {
                 </div>         
               </div>   
               <div className="flex flex-col space-y-10">
-                <h3>Why choose us?</h3>  
+                <h3 className="h2-lg-bold">Why choose us?</h3>  
                 <div>
                   <div className="flex space-x-10">
                     <AboutUsCards 
@@ -87,7 +88,7 @@ export default function Home() {
               </div>     
             </section>   
             <section className="max-w-screen-ab-xl mx-auto space-y-12 py-14 px-[150px]">
-              <h3>Benefits of <span className="text-light-coral-150">learning</span> with us</h3>
+              <h3 className="h2-lg-bold">Benefits of <span className="text-light-coral-150">learning</span> with us</h3>
               <div className="flex justify-between space-x-12">
                 <div className="flex flex-col space-y-12">
                   <AboutUsCards 
@@ -126,10 +127,10 @@ export default function Home() {
               {/* list */}
             </section>  
             <section className="max-w-screen-ab-xl mx-auto flex flex-col items-center space-y-10 py-20 px-[150px]">
-              <h3>Key <span className="text-light-coral-150">Features</span></h3>
+              <h3 className="h2-lg-bold">Key <span className="text-light-coral-150">Features</span></h3>
               <div className="flex space-x-2">
                 <AboutUsCards 
-                  src="/icons/benefits/icon-3.svg"
+                  src="/icons/simplified-icon.svg"
                   iconSize={24}
                   title="Simplified Lessons"
                   desc="Lessons can easily be accesed and are presented in video format  to be easily grasped by 
@@ -145,7 +146,7 @@ export default function Home() {
                   type="cardTypeB"
                 />
                 <AboutUsCards 
-                  src="/icons/benefits/icon-3.svg"
+                  src="/icons/about-us/icon-1.svg"
                   iconSize={24}
                   title="Online Assessments"
                   desc="Summative tests and quizzes online can be answered wherever the students want. 
@@ -155,7 +156,7 @@ export default function Home() {
               </div>
               <div className="flex space-x-2">
                 <AboutUsCards 
-                  src="/icons/benefits/icon-3.svg"
+                  src="/icons/feedback-icon.svg"
                   iconSize={24}
                   title="Immediate Feedbacks"
                   desc="In assessments, the students can automatically see the results of their exams right 
@@ -164,7 +165,7 @@ export default function Home() {
                   type="cardTypeB"
                 />
                 <AboutUsCards 
-                  src="/icons/benefits/icon-3.svg"
+                  src="/icons/benefits/icon-2.svg"
                   iconSize={24}
                   title="Ready Made Statistics "
                   desc="Students can automatically see their individual progress upon completion of activities, 
@@ -173,7 +174,7 @@ export default function Home() {
                   type="cardTypeB"
                 />
                 <AboutUsCards 
-                  src="/icons/benefits/icon-3.svg"
+                  src="/icons/about-us/icon-3.svg"
                   iconSize={24}
                   title="Reward System "
                   desc="In every completion of tasks, a learner earns points with corresponding badges or trophies 
@@ -183,9 +184,21 @@ export default function Home() {
                 />
               </div>
             </section>
-            <section className="text-white bg-dark-secondary pb-16">
+            <Image 
+              sizes="100vw" 
+              width={0} 
+              height={0} 
+              src="/images/waves.png" 
+              alt="" 
+              style={{ 
+                width: "100%", 
+                height: "220.92px", 
+                marginBottom: "-2px" 
+                }} 
+              />
+            <section className="text-white bg-dark-secondary pb-16 relative">     
               <div className="max-w-screen-ab-xl mx-auto px-[160px]">
-                <h4>
+                <h4 className="h2-lg-bold">
                   Get started with <br/>
                   <span className="text-light-coral-150">Math Grellic</span> today.
                 </h4>
