@@ -7,7 +7,10 @@
  * NOTE: Additional pages should be suffixed with "_PAGE"
  */
 export const HOME_PAGE = '/';
+export const ABOUT_US_PAGE = '/about-us';
 
+// dashboard 
 export const TEACHER_HOME_PAGE = '/teacher';
-
 export const STUDENT_HOME_PAGE = '/student';
+
+

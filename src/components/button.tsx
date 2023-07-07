@@ -8,7 +8,7 @@ export interface ButtonProps{
 
 export const Button = ({ children, classname, paddingSize = 'py-3 px-6 ' }: ButtonProps) => {
   return (
-    <button className={`bg-light-coral-150 rounded-lg 
+    <button className={`bg-light-coral-150 rounded-lg hover:bg-light-coral-200
         text-white drop-shadow-lg btn-text-sm-bold ${classname} ${paddingSize}`}>
       {children}
     </button>
