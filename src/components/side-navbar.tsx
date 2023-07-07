@@ -23,17 +23,18 @@ const SideNavbar = (props: any) => {
 
     return ( 
         <div className="flex flex-col items-start justify-between bg-white py-6 h-full z-50
-        relative w-[70px] transform duration-200 hover:w-[223px] hover:shadow-side-nav"
+        w-[70px] transform duration-200 hover:w-[223px] hover:shadow-side-nav
+        fixed top-0 left-0"
         onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
             <div className='w-full'>
-                <div className="flex items-center mb-20 px-6">
+                <div className="flex items-center mb-20 px-6 h-[50px]">
                     <Image 
                         width={24}
                         height={24}
                         src="/images/mg-brand-logo.png"
                         alt=""
                         className='w-[22px]'/>
-                    {hover && <p className={`label-md-bold text-[#374785] ml-2 whitespace-nowrap`}>MATH GRELLIC</p>}
+                    {hover && <p className={`text-[#374785] ml-2 whitespace-nowrap font-squada`}>MATH GRELLIC</p>}
                 </div>
                 
                 {props.type === 'teacher' ? 
