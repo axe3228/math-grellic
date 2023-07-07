@@ -16,7 +16,7 @@ export const NavBar = () => (
         <h6 className="font-squada">MATH GRELLIC</h6>
       </div>
       <div className="space-x-12 btn-text-md-bold">
-        <a href="">About Math Grellic</a>
+        <a href="/about-us">About Math Grellic</a>
         <a href="">Training</a>
         <a href="">Get Started</a>
         <Button>LOG IN</Button>

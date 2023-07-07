@@ -100,6 +100,7 @@ module.exports = {
         '.h3-base': { fontWeight: '400', fontSize: '40px', lineHeight: '54px', letterSpacing: 0 },
         '.h3-md': { fontWeight: '500', fontSize: '40px', lineHeight: '54px', letterSpacing: 0 },
         '.h3-bold': { fontWeight: '700', fontSize: '40px', lineHeight: '54px', letterSpacing: 0 },
+        '.h3-bold-lg': { fontWeight: '800', fontSize: '40px', lineHeight: '54px', letterSpacing: 0 },
 
         '.h4-base': { fontWeight: '400', fontSize: '28px', lineHeight: '40px', letterSpacing: 0 },
         '.h4-md': { fontWeight: '500', fontSize: '28px', lineHeight: '40px', letterSpacing: 0 },
