@@ -24,6 +24,8 @@ module.exports = {
       },
       boxShadow: {
         'side-nav': '0px 4px 20px 0px rgba(0, 0, 0, 0.25)',
+        'button': '0px 4px 12px 0px rgba(247, 108, 108, 0.50)',
+        'panel-shadow': '0px 4px 24px 0px rgba(55, 71, 133, 0.05)',
       },
     },
     colors: {
@@ -115,6 +117,7 @@ module.exports = {
         '.h6-base': { fontWeight: '400', fontSize: '20px', lineHeight: '30px', letterSpacing: 0 },
         '.h6-md': { fontWeight: '500', fontSize: '20px', lineHeight: '30px', letterSpacing: 0 },
         '.h6-bold': { fontWeight: '700', fontSize: '20px', lineHeight: '30px', letterSpacing: 0 },
+        '.h6-bold-lg': { fontWeight: '800', fontSize: '20px', lineHeight: '30px', letterSpacing: 0 },
 
         '.subheading-xl-regular': { fontWeight: '400', fontSize: '20px', lineHeight: '28px', letterSpacing: 1.6 },
         '.subheading-xl-md': { fontWeight: '500', fontSize: '20px', lineHeight: '28px', letterSpacing: 0 },
@@ -133,6 +136,7 @@ module.exports = {
 
         '.body-md': { fontWeight: '400', fontSize: '18px', lineHeight: '32px', letterSpacing: 0 },
         '.body-sm': { fontWeight: '400', fontSize: '14px', lineHeight: '22px', letterSpacing: 0 },
+        '.body-xs': { fontWeight: '400', fontSize: '12px', lineHeight: '22px', letterSpacing: 0 },
 
         '.label-lg-md': { fontWeight: '500', fontSize: '20px', lineHeight: '30px', letterSpacing: 0 },
         '.label-lg-bold': { fontWeight: '700', fontSize: '20px', lineHeight: '30px', letterSpacing: 0 },

@@ -1,5 +1,9 @@
 'use client'
-import { TEACHER_HOME_PAGE, STUDENT_HOME_PAGE } from '@/constants/routes'
+import { TEACHER_HOME_PAGE,
+    TEACHER_LESSONS_PAGE, 
+    STUDENT_HOME_PAGE, 
+    STUDENT_LESSONS_PAGE,
+} from '@/constants/routes'
 import Image from "next/image"
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import Link from "next/link";
@@ -41,7 +45,7 @@ const SideNavbar = (props: any) => {
                 // TEACHER
                 <div>
                     <NavLink url={TEACHER_HOME_PAGE} icon={'grid'} title={'Home'}/>
-                    <NavLink url={'/'} icon={'collection-play'} title={'Lessons'}/>
+                    <NavLink url={TEACHER_LESSONS_PAGE} icon={'collection-play'} title={'Lessons'}/>
                     <NavLink url={'/'} icon={'dice-3'} title={'Activities'}/>
                     <NavLink url={'/'} icon={'file-earmark-bar-graph'} title={'Exams'}/>
                     <NavLink url={'/'} icon={'bar-chart'} title={'Performance'}/>
@@ -52,7 +56,7 @@ const SideNavbar = (props: any) => {
                 // STUDENT
                 <div>
                     <NavLink url={STUDENT_HOME_PAGE} icon={'grid'} title={'Home'}/>
-                    <NavLink url={'/'} icon={'collection-play'} title={'Lessons'}/>
+                    <NavLink url={STUDENT_LESSONS_PAGE} icon={'collection-play'} title={'Lessons'}/>
                     <NavLink url={'/'} icon={'dice-3'} title={'Drills and Exercises'}/>
                     <NavLink url={'/'} icon={'file-earmark-bar-graph'} title={'Exams'}/>
                     <NavLink url={'/'} icon={'bar-chart'} title={'Performance'}/>

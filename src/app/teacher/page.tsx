@@ -1,10 +1,10 @@
-import Chart from "@/components/dashboard/chart";
-import CardLesson from "@/components/dashboard/card-lesson";
+import Chart from "@/components/cards/chart";
+import CardLesson from "@/components/cards/card-lesson";
 import Profile from "@/components/dashboard/profile";
 import SideNavbar from "@/components/side-navbar";
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import Image from "next/image"
-import Lesson from "@/components/dashboard/lesson";
+import Lesson from "@/components/cards/card-lesson-2";
 
 const Home = () => {
     const LessonVideo = ({title, duration, lock}: any) => (
