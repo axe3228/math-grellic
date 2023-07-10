@@ -105,6 +105,7 @@ module.exports = {
         '.h4-base': { fontWeight: '400', fontSize: '28px', lineHeight: '40px', letterSpacing: 0 },
         '.h4-md': { fontWeight: '500', fontSize: '28px', lineHeight: '40px', letterSpacing: 0 },
         '.h4-bold': { fontWeight: '700', fontSize: '28px', lineHeight: '40px', letterSpacing: 0 },
+        '.h4-bold-lg': { fontWeight: '800', fontSize: '28px', lineHeight: '40px', letterSpacing: 0 },
 
         '.h5-base': { fontWeight: '400', fontSize: '24px', lineHeight: '32px', letterSpacing: 0 },
         '.h5-md': { fontWeight: '500', fontSize: '24px', lineHeight: '32px', letterSpacing: 0 },
@@ -125,6 +126,8 @@ module.exports = {
         '.subheading-sm-regular': { fontWeight: '400', fontSize: '16px', lineHeight: '24px', letterSpacing: 0 },
         '.subheading-sm-md': { fontWeight: '500', fontSize: '16px', lineHeight: '24px', letterSpacing: 0 },
 
+        '.subheading-card': { fontWeight: '500', fontSize: '10px', lineHeight: '16px', letterSpacing: 0 },
+
         '.lead-regular': { fontWeight: '400', fontSize: '18px', lineHeight: '32px', letterSpacing: 0 },
         '.lead-md': { fontWeight: '500', fontSize: '14px', lineHeight: '24px', letterSpacing: 0 },
 
@@ -135,10 +138,12 @@ module.exports = {
         '.label-lg-bold': { fontWeight: '700', fontSize: '20px', lineHeight: '30px', letterSpacing: 0 },
 
         '.label-md-md': { fontWeight: '500', fontSize: '14px', lineHeight: '20px', letterSpacing: 0 },
-        '.label-md-bold': { fontWeight: '700', fontSize: '14px', lineHeight: '20px', letterSpacing: 0 },
+        '.label-md-bold': { fontWeight: '800', fontSize: '14px', lineHeight: '20px', letterSpacing: 0 },
 
         '.label-sm-md': { fontWeight: '500', fontSize: '12px', lineHeight: '16px', letterSpacing: 0 },
         '.label-sm-bold': { fontWeight: '700', fontSize: '12px', lineHeight: '16px', letterSpacing: 0 },
+
+        '.label-large': { fontWeight: '800', fontSize: '16px', lineHeight: '30px', letterSpacing: 0 },
 
         '.btn-text-lg': { fontWeight: '500', fontSize: '18px', lineHeight: '28px', letterSpacing: 0 },
         '.btn-text-md-bold': { fontWeight: '700', fontSize: '16px', lineHeight: '24px', letterSpacing: 0 },
