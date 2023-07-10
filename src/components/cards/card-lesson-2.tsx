@@ -1,4 +1,4 @@
-const Lesson = (props: any) => {
+const Lesson2 = (props: any) => {
     return ( 
         <div className="flex py-4 px-6 bg-white rounded-lg mb-3 cursor-pointer">
             <div className="flex flex-col items-center mr-4">
@@ -13,4 +13,4 @@ const Lesson = (props: any) => {
     );
 }
  
-export default Lesson;
+export default Lesson2;
