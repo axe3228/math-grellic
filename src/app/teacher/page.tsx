@@ -1,8 +1,10 @@
+import Chart from "@/components/dashboard/chart";
 import CardLesson from "@/components/dashboard/card-lesson";
 import Profile from "@/components/dashboard/profile";
 import SideNavbar from "@/components/side-navbar";
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import Image from "next/image"
+import Lesson from "@/components/dashboard/lesson";
 
 const Home = () => {
     const LessonVideo = ({title, duration, lock}: any) => (
@@ -21,7 +23,7 @@ const Home = () => {
     return ( 
         <div className="bg-uranian-blue-25 w-screen h-screen relative">
             <SideNavbar type={'teacher'} />
-            <div className="py-6 pr-6 pl-[94px] max-w-[1290px]">
+            <div className="py-6 pr-6 pl-[94px]">
                 <div className="flex justify-end w-full">
                     <Profile />
                 </div>
@@ -29,8 +31,8 @@ const Home = () => {
                     <i className={`bi bi-sun h6-bold text-light-coral-150`}></i>
                     <h6 className="h6-bold text-light-coral-150 ml-3">Good Morning, Ma’am Myrhelle!</h6>
                 </div>
-                <div className="w-full mt-[33px]">
-                    <div className="w-[55%]">
+                <div className="flex justify-between w-full mt-[33px]">
+                    <div className="w-[49%]">
                         <div className="flex">
                             <input type="text" name="name" placeholder="Any announcements today?"
                             className="rounded-lg border-[#C2C9D1] label-sm-md px-4 py-3 w-full"/>
@@ -64,9 +66,16 @@ const Home = () => {
                                 desc={`Some description explaining 
                                 about the lesson and what’s about to come.`}/>
                             </div>
+                            <div>
+                            <CardLesson
+                                icon={`/icons/lessons/icon-1.png`}
+                                title={'Activity Title'}
+                                desc={`Some description explaining 
+                                about the lesson and what’s about to come.`}/>
+                            </div>
                         </div>
                         <div className="flex mt-3">
-                            <div className="p-6 bg-white rounded-lg w-[49%]">
+                            <div className="flex flex-col p-6 bg-white rounded-lg w-[49%]">
                                 <Image 
                                     width={280}
                                     height={222}
@@ -100,8 +109,73 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="w-2/4">
-
+                    <div className="flex w-[49%]">
+                        <div>
+                            <Chart 
+                            title={`Class Diligence`}
+                            desc={`Check whole class’ latest improvement.`} />
+                            <div className="mt-3">
+                            <Chart 
+                            title={`Weekly Activity`}
+                            desc={`Submissions this week: 5`} />
+                            </div>
+                        </div>
+                        <div className="ml-6 grow">
+                            <div className="flex justify-between items-center mb-3">
+                                <h6 className="text-neutral-high label-large">Schedule</h6>
+                                <div className="bg-light-coral-25 max-w-8 py-1 px-2 rounded">
+                                    <i className='bi bi-calendar-week-fill text-light-coral-150 text-base'></i>
+                                </div>
+                            </div>
+                            <div className="overflow-y-auto h-[570px] pr-4">
+                                <p className="label-sm-bold text-neutral-med mb-3">April 2021</p>
+                                <div>
+                                    <Lesson 
+                                    day={`Wed`}
+                                    date={`7`}
+                                    lesson={`Lesson Title : Subtitle`}
+                                    time={`10:00am - 11:00am`}/>
+                                    <Lesson 
+                                    day={`Wed`}
+                                    date={`14`}
+                                    lesson={`Lesson Title : Subtitle`}
+                                    time={`10:00am - 11:00am`}/>
+                                    <Lesson 
+                                    day={`Wed`}
+                                    date={`21`}
+                                    lesson={`Lesson Title : Subtitle`}
+                                    time={`10:00am - 11:00am`}/>
+                                    <Lesson 
+                                    day={`Wed`}
+                                    date={`28`}
+                                    lesson={`Lesson Title : Subtitle`}
+                                    time={`10:00am - 11:00am`}/>
+                                </div>
+                                <p className="label-sm-bold text-neutral-med mb-3">May 2021</p>
+                                <div>
+                                    <Lesson 
+                                    day={`Wed`}
+                                    date={`7`}
+                                    lesson={`Lesson Title : Subtitle`}
+                                    time={`10:00am - 11:00am`}/>
+                                    <Lesson 
+                                    day={`Wed`}
+                                    date={`14`}
+                                    lesson={`Lesson Title : Subtitle`}
+                                    time={`10:00am - 11:00am`}/>
+                                    <Lesson 
+                                    day={`Wed`}
+                                    date={`21`}
+                                    lesson={`Lesson Title : Subtitle`}
+                                    time={`10:00am - 11:00am`}/>
+                                    <Lesson 
+                                    day={`Wed`}
+                                    date={`28`}
+                                    lesson={`Lesson Title : Subtitle`}
+                                    time={`10:00am - 11:00am`}/>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
