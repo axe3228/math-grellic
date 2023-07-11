@@ -1,3 +1,5 @@
+'use client'
+
 import { Button } from "@/components/button"
 import { AboutUsCards } from "@/components/cards/about-us-cards"
 import { Footer } from "@/components/footer"
