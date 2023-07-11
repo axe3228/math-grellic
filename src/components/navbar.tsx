@@ -1,7 +1,8 @@
-import Image from "next/image"
-import { Button } from "./button"
+"use client"
 
+import Image from "next/image"
 import { useState } from "react"
+import { Button } from "./button"
 import { ModalAuth } from "./modal-auth"
 
 export const NavBar = () => {
