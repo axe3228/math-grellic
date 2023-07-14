@@ -72,6 +72,9 @@ module.exports = {
       },
       gray: {
         DEFAULT: '#F0F2F3',
+      },
+      'light-card': {
+        DEFAULT: '#FBFCFF',
       }     
     },
   },

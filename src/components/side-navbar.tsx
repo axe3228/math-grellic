@@ -1,14 +1,16 @@
 'use client'
-import { TEACHER_HOME_PAGE,
-    TEACHER_LESSONS_PAGE, 
-    STUDENT_HOME_PAGE, 
+import {
+    STUDENT_HOME_PAGE,
     STUDENT_LESSONS_PAGE,
-} from '@/constants/routes'
-import Image from "next/image"
-import 'bootstrap-icons/font/bootstrap-icons.css'
+    STUDENT_SCHEDULE_PAGE,
+    TEACHER_HOME_PAGE,
+    TEACHER_LESSONS_PAGE
+} from '@/constants/routes';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from 'next/navigation'
-import React, { useState } from 'react';
+import { usePathname } from 'next/navigation';
+import { useState } from 'react';
 
 const SideNavbar = (props: any) => {
     const pathname = usePathname()
@@ -31,37 +33,39 @@ const SideNavbar = (props: any) => {
         fixed top-0 left-0"
         onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
             <div className='w-full'>
-                <div className="flex items-center mb-20 px-6 h-[50px]">
-                    <Image 
-                        width={24}
-                        height={24}
-                        src="/images/mg-brand-logo.png"
-                        alt=""
-                        className='w-[22px]'/>
-                    {hover && <p className={`text-[#374785] ml-2 whitespace-nowrap font-squada`}>MATH GRELLIC</p>}
-                </div>
+                <a href="/">
+                    <div className="flex items-center mb-20 px-6 h-[50px]">
+                        <Image 
+                            width={24}
+                            height={24}
+                            src="/images/mg-brand-logo.png"
+                            alt=""
+                            className='w-[22px]'/>
+                        {hover && <p className={`text-[#374785] ml-2 whitespace-nowrap font-squada`}>MATH GRELLIC</p>}
+                    </div>
+                </a>                
                 
                 {props.type === 'teacher' ? 
                 // TEACHER
                 <div>
                     <NavLink url={TEACHER_HOME_PAGE} icon={'grid'} title={'Home'}/>
                     <NavLink url={TEACHER_LESSONS_PAGE} icon={'collection-play'} title={'Lessons'}/>
-                    <NavLink url={'/'} icon={'dice-3'} title={'Activities'}/>
-                    <NavLink url={'/'} icon={'file-earmark-bar-graph'} title={'Exams'}/>
-                    <NavLink url={'/'} icon={'bar-chart'} title={'Performance'}/>
-                    <NavLink url={'/'} icon={'grid'} title={'Schedule'}/>
-                    <NavLink url={'/'} icon={'chat'} title={'Help'}/>
+                    <NavLink url={'#'} icon={'dice-3'} title={'Activities'}/>
+                    <NavLink url={'#'} icon={'file-earmark-bar-graph'} title={'Exams'}/>
+                    <NavLink url={'#'} icon={'bar-chart'} title={'Performance'}/>
+                    <NavLink url={'#'} icon={'grid'} title={'Schedule'}/>
+                    <NavLink url={'#'} icon={'chat'} title={'Help'}/>
                 </div> 
                 :
                 // STUDENT
                 <div>
                     <NavLink url={STUDENT_HOME_PAGE} icon={'grid'} title={'Home'}/>
                     <NavLink url={STUDENT_LESSONS_PAGE} icon={'collection-play'} title={'Lessons'}/>
-                    <NavLink url={'/'} icon={'dice-3'} title={'Drills and Exercises'}/>
-                    <NavLink url={'/'} icon={'file-earmark-bar-graph'} title={'Exams'}/>
-                    <NavLink url={'/'} icon={'bar-chart'} title={'Performance'}/>
-                    <NavLink url={'/'} icon={'grid'} title={'Schedule'}/>
-                    <NavLink url={'/'} icon={'chat'} title={'Ask Help'}/>
+                    <NavLink url={'#'} icon={'dice-3'} title={'Drills and Exercises'}/>
+                    <NavLink url={'#'} icon={'file-earmark-bar-graph'} title={'Exams'}/>
+                    <NavLink url={'#'} icon={'bar-chart'} title={'Performance'}/>
+                    <NavLink url={STUDENT_SCHEDULE_PAGE} icon={'grid'} title={'Schedule'}/>
+                    <NavLink url={'#'} icon={'chat'} title={'Ask Help'}/>
                 </div>
                 }
                 
