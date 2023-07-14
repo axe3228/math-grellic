@@ -16,5 +16,6 @@ export const STUDENT_HOME_PAGE = '/student';
 export const STUDENT_LESSONS_PAGE = '/student-lessons';
 
 export const STUDENT_SCHEDULE_PAGE = '/student-schedule';
+export const TEACHER_SCHEDULE_PAGE = '/teacher-schedule';
 
 

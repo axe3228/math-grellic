@@ -4,7 +4,8 @@ import {
     STUDENT_LESSONS_PAGE,
     STUDENT_SCHEDULE_PAGE,
     TEACHER_HOME_PAGE,
-    TEACHER_LESSONS_PAGE
+    TEACHER_LESSONS_PAGE,
+    TEACHER_SCHEDULE_PAGE
 } from '@/constants/routes';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Image from "next/image";
@@ -53,7 +54,7 @@ const SideNavbar = (props: any) => {
                     <NavLink url={'#'} icon={'dice-3'} title={'Activities'}/>
                     <NavLink url={'#'} icon={'file-earmark-bar-graph'} title={'Exams'}/>
                     <NavLink url={'#'} icon={'bar-chart'} title={'Performance'}/>
-                    <NavLink url={'#'} icon={'grid'} title={'Schedule'}/>
+                    <NavLink url={TEACHER_SCHEDULE_PAGE} icon={'grid'} title={'Schedule'}/>
                     <NavLink url={'#'} icon={'chat'} title={'Help'}/>
                 </div> 
                 :
