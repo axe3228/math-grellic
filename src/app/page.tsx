@@ -14,12 +14,12 @@ export default function Home() {
             <section className="max-w-screen-ab-xl mx-auto px-[150px] py-[120px] 
                                 text-space-blue-200 static"> 
                 <Image 
-                width={922}
-                height={820}
-                src="/images/bg-hero.png"
-                alt="school tools"
-                className="absolute top-[-80px] right-0 z-[-10]"
-              />            
+                  width={922}
+                  height={820}
+                  src="/images/bg-hero.png"
+                  alt="school tools"
+                  className="absolute top-[-80px] right-0 z-[-10]"
+                />            
               <div className="flex flex-col space-y-8">
                 <div>
                   <h1 className="font-squada text-space-blue-100">MATH GRELLIC</h1>
@@ -36,7 +36,7 @@ export default function Home() {
                   <Image
                     width={320}
                     height={320}
-                    src={"/images/brand-logo.png"}
+                    src={"/images/mg-brand-logo.png"}
                     alt=""
                   />
                 </div>
